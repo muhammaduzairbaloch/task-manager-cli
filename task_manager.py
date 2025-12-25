@@ -13,7 +13,7 @@ def show_tasks():
         print("\nYour Tasks:")
         for i, task in enumerate(tasks, 1):
             print(f"{i}. {task}")
-
+#show
 def delete_task(index):
     pass  # Abdul Raahim will implement delete-task here
 
