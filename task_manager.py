@@ -15,7 +15,11 @@ def show_tasks():
             print(f"{i}. {task}")
 #show
 def delete_task(index):
-    pass  # Abdul Raahim will implement delete-task here
+    if 1 <= index <= len(tasks):
+        removed = tasks.pop(index - 1)
+        print(f"Task deleted: '{removed}'")
+    else:
+        print("Invalid task number.")
 
 if __name__ == "__main__":
     print("Welcome to Task Manager CLI")
