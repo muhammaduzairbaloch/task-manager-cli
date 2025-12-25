@@ -7,7 +7,12 @@ def add_task(task_name):
     print(f"Task added: '{task_name}'")
 
 def show_tasks():
-    pass  # Agha Mujeeb will implement show-task here
+    if not tasks:
+        print("No tasks available.")
+    else:
+        print("\nYour Tasks:")
+        for i, task in enumerate(tasks, 1):
+            print(f"{i}. {task}")
 
 def delete_task(index):
     pass  # Abdul Raahim will implement delete-task here
